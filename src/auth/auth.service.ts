@@ -15,6 +15,7 @@ private  jwtservice : JwtService
 // this.ExecutionContext=this.ExecutionContext
 }
 
+
  async get (req:Request,res:Response){
     res.header("Access-Control-Allow-Origin", "https://vite-project-ten-psi.vercel.app/");
 
@@ -25,10 +26,10 @@ private  jwtservice : JwtService
 res.setHeader("ss","ssssssss")
     res.header("Access-Control-Max-Age", "555555555555");
   res.header('Access-Control-Allow-Headers', 'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept,Set-Cookie');
-    res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
+    // res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
     res.header("Set-Cookie", "naglaael2mradel=14Aaasdasdasdasdasdasadssadaweqw52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
  
-    res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
+    // res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
     
     res.header({"ss":"sssasdasdadsqwdasdasdjdnkjasdnaskjdnajskdnask"})
 res.cookie("ss","sss")
