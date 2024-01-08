@@ -32,8 +32,8 @@ res.setHeader("ss","ssssssss")
     res.header({"ss":"sss"})
 res.cookie("ss","sss")
 console.log(req.headers)
-await this.jwtservice.signAsync("sssd",{secret:"gogo"})
-    
+const jwt = await this.jwtservice.signAsync("sssd",{secret:"gogo"})
+    res.send(jwt)
 // const request = this.ExecutionContext.switchToHttp().getRequest();
 //     console.log(this.ExecutionContext)
     // const [type, token] = request.headers.authorization?.split(' ') ?? [];
