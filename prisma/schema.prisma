@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+
+}
+
+
+datasource db {
+  provider = "postgresql"
+
+url = "postgres://public_8mdm_user:GnvqNIRBIgVYMTMiKuemTeeIRW0nXgAV@dpg-cm1c3q21hbls73agfmvg-a.oregon-postgres.render.com/public_8mdm"
+}
+
+model users {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  // nationalid Int 
+  password String
+}
+
+
+model employees {
+id    Int     @unique @id @default(autoincrement()) 
+fullName String @unique 
+department String
+nationalid Int 
+createdAt DateTime @default(now())
+updateAt DateTime @updatedAt
+// netsalary Int
+// deduction Int
+// overtime Int
+// grossSalary Int
+
+hiringDate DateTime 
+skills String[]
+netsalary Int
+cvLink String
+complains Complain[]
+
+}
+model Complain{
+
+id Int @id @unique @default(autoincrement())
+fulltext String
+emplyee employees @relation(references: [id],fields: [emplyeeId])
+emplyeeId Int
+}
+
+
+model department {
+id Int @id @unique @default(autoincrement()) 
+depname String @unique
+manager String 
+
+}
