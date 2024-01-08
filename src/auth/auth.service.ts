@@ -27,7 +27,7 @@ res.setHeader("ss","ssssssss")
     res.header("Access-Control-Max-Age", "555555555555");
   res.header('Access-Control-Allow-Headers', 'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept,Set-Cookie');
     // res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
-    res.header("Set-Cookie", "naglaael2mradel=14Aaasdasdasdasdasdasadssadaweqw52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
+    // res.header("Set-Cookie", "naglaael2mradel=14Aaasdasdasdasdasdasadssadaweqw52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
  
     // res.header("Set-Cookie", "sid=14A52; max-age=555555555555;samesite=None;sameSite=none ;SameSite=None ;Secure ")
     
@@ -35,7 +35,7 @@ res.setHeader("ss","ssssssss")
 res.cookie("ss","sss")
 console.log(req.headers)
 const jwt = await this.jwtservice.signAsync("sssd",{secret:"gogo"})
-    res.send(jwt)
+    res.send(req.headers)
 // const request = this.ExecutionContext.switchToHttp().getRequest();
 //     console.log(this.ExecutionContext)
     // const [type, token] = request.headers.authorization?.split(' ') ?? [];
