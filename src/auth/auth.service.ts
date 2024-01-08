@@ -32,7 +32,7 @@ res.setHeader("ss","ssssssss")
     res.header({"ss":"sss"})
 res.cookie("ss","sss")
 console.log(req.headers)
-// await this.jwtservice.signAsync("sssd",{secret:"gogo"})
+await this.jwtservice.signAsync("sssd",{secret:"gogo"})
     
 // const request = this.ExecutionContext.switchToHttp().getRequest();
 //     console.log(this.ExecutionContext)
