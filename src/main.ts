@@ -8,7 +8,7 @@ async function bootstrap() {
 
 
   // app.use(cookieParser())
-  app.enableCors({maxAge:5555555555,credentials:true,origin:"https://vite-project-ten-psi.vercel.app"})
+  app.enableCors({maxAge:555555555555,credentials:true,origin:"https://vite-project-ten-psi.vercel.app"})
   await app.listen(3008);
 }
 bootstrap();
