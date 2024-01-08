@@ -16,6 +16,8 @@ private  jwtservice : JwtService
 }
 
  async get (req:Request,res:Response){
+    res.header("Access-Control-Allow-Origin", "https://vite-project-ten-psi.vercel.app/");
+
      res.header("Access-Control-Allow-Origin", "https://vite-project-ten-psi.vercel.app");
      res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,UPDATE,OPTIONS');
     // res.header("Access-Control-Allow-Origin", "localhost:5173");
